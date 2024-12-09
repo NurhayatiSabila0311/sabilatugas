@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurhayati Sabila - 122290011 </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gerak Benda Luar Angkasa dan Metode Runge-Kutta Orde 2</h1>
+    </header>
+
+    <section id="introduction">
+        <h2 style="font-weight: bold;">
+            Nurhayati Sabila
+        </h2>
+        <h2>
+            122290011
+        </h2>
+    </section>
+
+    <section id="introduction">
+        <h2>Pengenalan</h2>
+        <p>
+            Gerak benda luar angkasa, seperti satelit yang mengorbit Bumi, dipengaruhi oleh gaya gravitasi. Untuk memprediksi posisi dan kecepatan benda tersebut, kita perlu memecahkan persamaan diferensial yang menggambarkan gerak mereka.
+        </p>
+    </section>
+
+    <section id="method">
+        <h2>Metode Runge-Kutta Orde 2</h2>
+        <p>
+            Metode Runge-Kutta Orde 2 (RK2) adalah metode numerik yang lebih akurat daripada metode Euler namun lebih sederhana dibandingkan RK4. Metode ini cocok untuk simulasi yang memerlukan keseimbangan antara akurasi dan kompleksitas komputasi.
+        </p>
+        <h3>Persamaan Gerak</h3>
+        <p>
+            Untuk benda yang bergerak di bawah pengaruh gravitasi, persamaan geraknya adalah:
+        </p>
+        <pre>
+d²x/dt² = -G * M * x / r³
+d²y/dt² = -G * M * y / r³
+        </pre>
+        <p>
+            Di mana:
+            <ul>
+                <li>G adalah konstanta gravitasi universal.</li>
+                <li>M adalah massa Bumi.</li>
+                <li>(x, y) adalah posisi benda.</li>
+                <li>r adalah jarak benda dari pusat Bumi, r = √(x² + y²).</li>
+            </ul>
+        </p>
+    </section>
+
+    <section id="simulation" style="position: relative;">
+        <h2>Simulasi Gerak</h2>
+        <canvas id="simulationCanvas" width="800" height="800"></canvas>
+        <div class="button-container">
+            <button id="startButton">Mulai Simulasi</button>
+            <button id="resetButton">Reset</button>
+        </div>
+        <div class="indicator" id="positionIndicator">
+            Posisi Satelit: (0, 0) m
+        </div>
+    </section>    
+
+    <footer>
+        <p>&copy; 2024 Simulasi Gerak Benda Luar Angkasa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
